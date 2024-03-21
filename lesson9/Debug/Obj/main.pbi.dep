@@ -1,0 +1,3 @@
+main.pbi: E:\embedded_programming\lesson9\delay.h \
+  E:\embedded_programming\lesson9\tm4c.h \
+  E:\embedded_programming\lesson9\main.c
