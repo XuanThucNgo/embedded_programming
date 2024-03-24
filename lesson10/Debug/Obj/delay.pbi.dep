@@ -1,2 +1,2 @@
-delay.pbi: E:\embedded_programming\lesson10\delay.c \
-  E:\embedded_programming\lesson10\delay.h
+delay.pbi: E:\embedded_programming\lesson10\delay.h \
+  E:\embedded_programming\lesson10\delay.c

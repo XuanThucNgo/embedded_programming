@@ -1,12 +1,12 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  22/Mar/2024  00:22:54
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  22/Mar/2024  20:28:04
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =  E:\embedded_programming\lesson9\Debug\Exe\project.out
 #    Map file     =  E:\embedded_programming\lesson9\Debug\List\project.map
 #    Command line =
-#        -f C:\Users\LENOVO\AppData\Local\Temp\EW6F69.tmp
+#        -f C:\Users\LENOVO\AppData\Local\Temp\EWC8ED.tmp
 #        (E:\embedded_programming\lesson9\Debug\Obj\delay.o
 #        E:\embedded_programming\lesson9\Debug\Obj\main.o --no_out_extension -o
 #        E:\embedded_programming\lesson9\Debug\Exe\project.out --redirect
