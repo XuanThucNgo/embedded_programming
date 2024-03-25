@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>4291113133</Checksum>
+        <Checksum>1294856748</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>
@@ -45,6 +45,8 @@
     </Breakpoints>
     <watch_formats>
         <Fmt0>{W}1:s32	4	0</Fmt0>
+        <Fmt1>{W}1:u8a	1	0</Fmt1>
+        <Fmt2>{W}1:u8b	1	0</Fmt2>
     </watch_formats>
     <DriverProfiling>
         <Enabled>0</Enabled>
@@ -86,7 +88,7 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Bp0>_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.41.5" 0 0 1 "" 0 ""</Bp0>
+        <Bp0>_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.49.3" 0 0 1 "" 0 ""</Bp0>
         <Count>1</Count>
     </Breakpoints2>
     <Interrupts>
