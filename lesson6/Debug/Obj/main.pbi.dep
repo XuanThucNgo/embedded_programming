@@ -1,2 +1,2 @@
-main.pbi: E:\embedded_programming\lesson6\tm4c.h \
-  E:\embedded_programming\lesson6\main.c
+main.pbi: E:\embedded_programming\lesson6\main.c \
+  E:\embedded_programming\lesson6\tm4c.h

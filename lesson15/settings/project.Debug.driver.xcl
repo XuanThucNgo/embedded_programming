@@ -1,0 +1,13 @@
+"--endian=little" 
+
+"--cpu=Cortex-M3" 
+
+"--fpu=None" 
+
+"--semihosting" 
+
+"--drv_interface_speed=500" 
+
+
+
+

@@ -1,0 +1,221 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  30/Mar/2024  10:51:13
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Exe\project.out
+#    Map file     =
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\List\project.map
+#    Command line =
+#        -f C:\Users\LENOVO\AppData\Local\Temp\EW6475.tmp
+#        (E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj\bsp.o
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj\delay.o
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj\main.o
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj\startup_tm4c.o
+#        --no_out_extension -o
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Exe\project.out
+#        --map
+#        E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\List\project.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                      0x26c
+  .intvec            const            0x0  0x26c  startup_tm4c.o [1]
+                                  - 0x26c  0x26c
+
+"P1":                                      0x263
+  .text              ro code        0x26c   0xc4  main.o [1]
+  .text              ro code        0x330   0x14  delay.o [1]
+  .text              ro code        0x344   0x54  startup_tm4c.o [1]
+  .text              ro code        0x398   0x2c  bsp.o [1]
+  .text              ro code        0x3c4   0x38  packbits_init_single.o [3]
+  .text              ro code        0x3fc   0x28  data_init.o [3]
+  .iar.init_table    const          0x424   0x10  - Linker created -
+  .text              ro code        0x434   0x1e  cmain.o [3]
+  .text              ro code        0x452    0x4  low_level_init.o [2]
+  .text              ro code        0x456    0x4  exit.o [2]
+  .text              ro code        0x45c    0xa  cexit.o [3]
+  .text              ro code        0x468   0x14  exit.o [4]
+  .rodata            const          0x47c    0xc  startup_tm4c.o [1]
+  .rodata            const          0x488    0xc  startup_tm4c.o [1]
+  .rodata            const          0x494    0xc  startup_tm4c.o [1]
+  .rodata            const          0x4a0    0xc  startup_tm4c.o [1]
+  .text              ro code        0x4ac    0xc  cstartup_M.o [3]
+  .rodata            const          0x4b8    0x8  startup_tm4c.o [1]
+  .rodata            const          0x4c0    0x0  packbits_init_single.o [3]
+  Initializer bytes  const          0x4c0    0xf  <for P2-1>
+                                  - 0x4cf  0x263
+
+"P2", part 1 of 2:                          0x24
+  P2-1                        0x2000'0000   0x24  <Init block>
+    .data            inited   0x2000'0000    0x4  main.o [1]
+    .data            inited   0x2000'0004    0x8  main.o [1]
+    .bss             inited   0x2000'000c    0x4  main.o [1]
+    .bss             inited   0x2000'0010    0x8  main.o [1]
+    .bss             inited   0x2000'0018    0xc  main.o [1]
+                            - 0x2000'0024   0x24
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0028  0x400  <Block>
+    CSTACK           uninit   0x2000'0028  0x400  <Block tail>
+                            - 0x2000'0428  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x4cf     0x7'ffff  0x7'fb31
+  0x2000'0024  0x2000'0027       0x4
+  0x2000'0428  0x2000'ffff    0xfbd8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xf (41% of destination):
+                0x4c0   0xf
+    1 destination range, total size 0x24:
+          0x2000'0000  0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj: [1]
+    bsp.o                        44
+    delay.o                      20
+    main.o                      196       15       36
+    startup_tm4c.o               84      676
+    -------------------------------------------------
+    Total:                      344      691       36
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+rt7M_tl.a: [3]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       56
+    -------------------------------------------------
+    Total:                      148
+
+shb_l.a: [4]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          4
+    Linker created                        16    1'024
+-----------------------------------------------------
+    Grand Total:                524      707    1'060
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base         0x424          --   Gb  - Linker created -
+.iar.init_table$$Limit        0x434          --   Gb  - Linker created -
+?main                         0x435         Code  Gb  cmain.o [3]
+BusFault_Handler              0x363    0xa  Code  Gb  startup_tm4c.o [1]
+CSTACK$$Base            0x2000'0028          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0428         Data  Gb  - Linker created -
+HardFault_Handler             0x345    0xa  Code  Gb  startup_tm4c.o [1]
+MemManage_Handler             0x359    0xa  Code  Gb  startup_tm4c.o [1]
+NMI_Handler                   0x34f    0xa  Code  Gb  startup_tm4c.o [1]
+NVIC_SystemReset              0x399   0x1a  Code  Lc  bsp.o [1]
+Region$$Table$$Base           0x424          --   Gb  - Linker created -
+Region$$Table$$Limit          0x434          --   Gb  - Linker created -
+SysTick_Handler               0x3c3    0x2  Code  Gb  bsp.o [1]
+Unused_Handler                0x377    0xa  Code  Gb  startup_tm4c.o [1]
+UsageFault_Handler            0x36d    0xa  Code  Gb  startup_tm4c.o [1]
+__cmain                       0x435         Code  Gb  cmain.o [3]
+__exit                        0x469   0x14  Code  Gb  exit.o [4]
+__iar_data_init3              0x3fd   0x28  Code  Gb  data_init.o [3]
+__iar_packbits_init_single3
+                              0x3c5   0x38  Code  Gb  packbits_init_single.o [3]
+__iar_program_start           0x4ad         Code  Gb  cstartup_M.o [3]
+__low_level_init              0x453    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0  0x26c  Data  Gb  startup_tm4c.o [1]
+_call_main                    0x441         Code  Gb  cmain.o [3]
+_exit                         0x45d         Code  Gb  cexit.o [3]
+_main                         0x44f         Code  Gb  cmain.o [3]
+assert_failed                 0x3bd    0x6  Code  Gb  bsp.o [1]
+delay                         0x331   0x14  Code  Gb  delay.o [1]
+exit                          0x457    0x4  Code  Gb  exit.o [2]
+main                          0x26d   0xc4  Code  Gb  main.o [1]
+p1                      0x2000'0000    0x4  Data  Gb  main.o [1]
+p2                      0x2000'000c    0x4  Data  Gb  main.o [1]
+t                       0x2000'0018    0xc  Data  Gb  main.o [1]
+w                       0x2000'0004    0x8  Data  Gb  main.o [1]
+w2                      0x2000'0010    0x8  Data  Gb  main.o [1]
+
+
+[1] = E:\modern-embedded-programming-course-main\modern-embedded-programming-course-main\lesson-15\tm4c123-iar\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+    524 bytes of readonly  code memory
+    707 bytes of readonly  data memory
+  1'060 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
