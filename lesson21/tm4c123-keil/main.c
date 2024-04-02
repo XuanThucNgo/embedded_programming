@@ -16,6 +16,7 @@ int main(void) {
 }
 #endif
 
+#if 1
 /* background code: non-blocking version */
 int main(void) {
     BSP_init();
@@ -53,3 +54,4 @@ int main(void) {
     }
     //return 0;
 }
+#endif

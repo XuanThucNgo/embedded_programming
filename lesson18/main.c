@@ -22,7 +22,6 @@ int main() {
     while (1) {
           GPIOF_AHB->DATA_Bits[LED_GREEN] = LED_GREEN;
           GPIOF_AHB->DATA_Bits[LED_GREEN] = 0U;
-
     }
     //return 0;
 }
