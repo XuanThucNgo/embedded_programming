@@ -5,7 +5,6 @@ uint32_t stack_blinky1[40];
 uint32_t *sp_blinky1 = &stack_blinky1[40];
 
 void main_blinky1() {
-    BSP_init();
     while (1) {
         BSP_ledGreenOn();
         BSP_delay(BSP_TICKS_PER_SEC / 4U);
@@ -18,7 +17,6 @@ uint32_t stack_blinky2[40];
 uint32_t *sp_blinky2 = &stack_blinky2[40];
 
 void main_blinky2() {
-    BSP_init();
     while (1) {
         BSP_ledBlueOn();
         BSP_delay(BSP_TICKS_PER_SEC / 2U);
@@ -29,6 +27,8 @@ void main_blinky2() {
 
 /* background code: sequential with blocking version */
 int main(void) {
+	  //uint32_t volatile run = 0U;
+	
     BSP_init();
 		/*fabricate Cortex-M ISR stack frame for blinky1*/
 		*(--sp_blinky1) = (1U << 24);		//xPSR
@@ -39,6 +39,16 @@ int main(void) {
 		*(--sp_blinky1) =	0x00000002U;	/*R2*/ 
 		*(--sp_blinky1) =	0x00000001U;	/*R1*/ 
 		*(--sp_blinky1) =	0x00000000U;	/*R0*/ 
+	  /*additionally, fake registers R4-R11*/
+		*(--sp_blinky1) =	0x0000000BU;	/*R11*/ 
+		*(--sp_blinky1) =	0x0000000AU;	/*R10*/ 
+		*(--sp_blinky1) =	0x00000009U;	/*R9*/ 
+		*(--sp_blinky1) =	0x00000008U;	/*R8*/
+		*(--sp_blinky1) =	0x00000007U;	/*R7*/ 
+		*(--sp_blinky1) =	0x00000006U;	/*R6*/ 
+		*(--sp_blinky1) =	0x00000005U;	/*R5*/ 
+		*(--sp_blinky1) =	0x00000004U;	/*R4*/
+	
 	
 		/*fabricate Cortex-M ISR stack frame for blinky2*/
 		*(--sp_blinky2) = (1U << 24);		//xPSR
@@ -49,8 +59,23 @@ int main(void) {
 		*(--sp_blinky2) =	0x00000002U;	/*R2*/ 
 		*(--sp_blinky2) =	0x00000001U;	/*R1*/ 
 		*(--sp_blinky2) =	0x00000000U;	/*R0*/ 
+		/*additionally, fake registers R4-R11*/
+		*(--sp_blinky2) =	0x0000000BU;	/*R11*/ 
+		*(--sp_blinky2) =	0x0000000AU;	/*R10*/ 
+		*(--sp_blinky2) =	0x00000009U;	/*R9*/ 
+		*(--sp_blinky2) =	0x00000008U;	/*R8*/
+		*(--sp_blinky2) =	0x00000007U;	/*R7*/ 
+		*(--sp_blinky2) =	0x00000006U;	/*R6*/ 
+		*(--sp_blinky2) =	0x00000005U;	/*R5*/ 
+		*(--sp_blinky2) =	0x00000004U;	/*R4*/
 	
-		while(1) {
+		/*if(run) {				|
+			main_blinky1(); |
+		}									| => TEST RETURN OF MAIN_BLINKY1(2) BUT NOT EFFIENCY
+		else {						|
+			main_blinky2(); |
+		}*/ 	
+	  while(1) {
 		}
 		
     //return 0;

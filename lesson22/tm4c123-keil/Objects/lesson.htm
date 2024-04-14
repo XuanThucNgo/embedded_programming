@@ -3,11 +3,17 @@
 <title>Static Call Graph - [.\Objects\lesson.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\lesson.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Wed Apr  3 02:08:03 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Tue Apr  9 00:45:57 2024
 <BR><P>
-<H3>Maximum Stack Usage =         24 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         24 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main_blinky1 &rArr; BSP_init &rArr; SystemCoreClockUpdate
+__rt_entry_main &rArr; main &rArr; BSP_init &rArr; SystemCoreClockUpdate
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[7a]">main_blinky1</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7a]">main_blinky1</a><BR>
+ <LI><a href="#[7b]">main_blinky2</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7b]">main_blinky2</a><BR>
+</UL>
 <P>
 <H3>
 Function Pointers
@@ -687,9 +693,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky2
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky1
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[98]"></a>BSP_ledBlueOff</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, bsp.o(.text.BSP_ledBlueOff))
@@ -731,7 +735,7 @@ Global Symbols
 <P><STRONG><a name="[79]"></a>assert_failed</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, bsp.o(.text.assert_failed))
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123gh6pm.o(.text)
 </UL>
-<P><STRONG><a name="[85]"></a>main</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, main.o(.text.main))
+<P><STRONG><a name="[85]"></a>main</STRONG> (Thumb, 250 bytes, Stack size 0 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = main &rArr; BSP_init &rArr; SystemCoreClockUpdate
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
@@ -739,23 +743,29 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[7a]"></a>main_blinky1</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text.main_blinky1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = main_blinky1 &rArr; BSP_init &rArr; SystemCoreClockUpdate
+<P><STRONG><a name="[7a]"></a>main_blinky1</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, main.o(.text.main_blinky1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + In Cycle
+<LI>Call Chain = main_blinky1 &rArr;  main_blinky1 (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledGreenOn
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky1
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledGreenOn
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledGreenOff
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky1
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text.main)
 </UL>
-<P><STRONG><a name="[7b]"></a>main_blinky2</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text.main_blinky2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = main_blinky2 &rArr; BSP_init &rArr; SystemCoreClockUpdate
+<P><STRONG><a name="[7b]"></a>main_blinky2</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, main.o(.text.main_blinky2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + In Cycle
+<LI>Call Chain = main_blinky2 &rArr;  main_blinky2 (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledBlueOn
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky2
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledBlueOn
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_ledBlueOff
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_blinky2
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text.main)
 </UL><P>

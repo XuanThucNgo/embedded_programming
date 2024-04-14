@@ -1,0 +1,9 @@
+Also when we make entry to exception handler, registers R0-R3,R12,LR,PC and xPSR are saved. But R4-R11 are not.
+Therefore if the ISR does use any of the registers R4-R11, it will restore the original value before returning to the original functions. 
+Thus no harm done.However if we are returning to some other function, than this will create a problem. 
+Since we would be returning the value of register meant for the previous function, and not to the function which we are jumping into.
+Thus we have two situtations, one is the automatic saving of registers (R0-R3,R12,LR,PC and xPSR) upon entry 
+to the exception handler as guaranteed by ARM procedure call. But to ensure integrity we have to additionally save register R4-R11 as well. 
+But the second thing needs to be done manually !! (or by coding, :-p) ,,
+--> we also have to decrement the stack pointer by 0x20 (32) --> so the 8 registers(R4-R11), 
+each of 4 bytes can be accounted for in the stack frame.
