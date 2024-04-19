@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1252453214</Checksum>
+        <Checksum>4292971568</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>
@@ -101,10 +101,12 @@
         <Bp2>_ "STD_CODE" "{$PROJ_DIR$}.11.1" 0 0 0 0 "" 0 ""</Bp2>
         <Bp3>_ "STD_CODE" "0x000002AE" 0 0 0 0 "" 0 ""</Bp3>
         <Bp4>_ "STD_CODE" "0x000002C0" 1 0 0 0 "" 0 ""</Bp4>
-        <Count>5</Count>
+        <Bp5>_ "STD_CODE" "{$PROJ_DIR$\main.c}.28.11" 1 0 0 0 "" 0 ""</Bp5>
+        <Count>6</Count>
     </Breakpoints>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "E:\embedded_programming\lesson20\bsp.c" "D:\embedded_programming\lesson20\bsp.c"</A0>
+        <Count>1</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
 </settings>

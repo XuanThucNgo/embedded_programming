@@ -1,18 +1,18 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  02/Apr/2024  16:57:47
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  18/Apr/2024  21:45:30
 # Copyright 2007-2019 IAR Systems AB.
 #
-#    Output file  =  E:\embedded_programming\lesson18\Debug\Exe\project.out
-#    Map file     =  E:\embedded_programming\lesson18\Debug\List\project.map
+#    Output file  =  D:\embedded_programming\lesson18\Debug\Exe\project.out
+#    Map file     =  D:\embedded_programming\lesson18\Debug\List\project.map
 #    Command line =
-#        -f C:\Users\LENOVO\AppData\Local\Temp\EWDCA3.tmp
-#        (E:\embedded_programming\lesson18\Debug\Obj\bsp.o
-#        E:\embedded_programming\lesson18\Debug\Obj\main.o
-#        E:\embedded_programming\lesson18\Debug\Obj\startup_tm4c.o
+#        -f C:\Users\LENOVO\AppData\Local\Temp\EW7647.tmp
+#        (D:\embedded_programming\lesson18\Debug\Obj\bsp.o
+#        D:\embedded_programming\lesson18\Debug\Obj\main.o
+#        D:\embedded_programming\lesson18\Debug\Obj\startup_tm4c.o
 #        --no_out_extension -o
-#        E:\embedded_programming\lesson18\Debug\Exe\project.out --map
-#        E:\embedded_programming\lesson18\Debug\List\project.map --config
+#        D:\embedded_programming\lesson18\Debug\Exe\project.out --map
+#        D:\embedded_programming\lesson18\Debug\List\project.map --config
 #        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        8.3\arm\config\linker\TexasInstruments\TM4C123FH6.icf" --semihosting
 #        --entry __iar_program_start --vfe --text_out locale)
@@ -101,7 +101,7 @@ command line/config:
     -------------------------------------------
     Total:
 
-E:\embedded_programming\lesson18\Debug\Obj: [1]
+D:\embedded_programming\lesson18\Debug\Obj: [1]
     bsp.o                  56
     main.o                116
     startup_tm4c.o         84      676
@@ -164,7 +164,7 @@ exit                        0x38f    0x4  Code  Gb  exit.o [2]
 main                        0x26d   0x74  Code  Gb  main.o [1]
 
 
-[1] = E:\embedded_programming\lesson18\Debug\Obj
+[1] = D:\embedded_programming\lesson18\Debug\Obj
 [2] = dl7M_tln.a
 [3] = rt7M_tl.a
 [4] = shb_l.a

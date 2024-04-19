@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>3852105496</Checksum>
+        <Checksum>707077313</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>
@@ -87,7 +87,8 @@
         <Stop>1</Stop>
     </MemConfig>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "E:\embedded_programming\lesson3\main.c" ""</A0>
+        <Count>1</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <Simulator>

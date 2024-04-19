@@ -1,16 +1,16 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  16/Mar/2024  00:46:46
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  18/Apr/2024  21:25:42
 # Copyright 2007-2019 IAR Systems AB.
 #
-#    Output file  =  E:\embedded_programming\lesson3\Debug\Exe\project.out
-#    Map file     =  E:\embedded_programming\lesson3\Debug\List\project.map
+#    Output file  =  D:\embedded_programming\lesson3\Debug\Exe\project.out
+#    Map file     =  D:\embedded_programming\lesson3\Debug\List\project.map
 #    Command line =
-#        -f C:\Users\LENOVO\AppData\Local\Temp\EW3EE4.tmp
-#        (E:\embedded_programming\lesson3\Debug\Obj\main.o --no_out_extension
-#        -o E:\embedded_programming\lesson3\Debug\Exe\project.out --redirect
+#        -f C:\Users\LENOVO\AppData\Local\Temp\EW561C.tmp
+#        (D:\embedded_programming\lesson3\Debug\Obj\main.o --no_out_extension
+#        -o D:\embedded_programming\lesson3\Debug\Exe\project.out --redirect
 #        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
-#        E:\embedded_programming\lesson3\Debug\List\project.map --config
+#        D:\embedded_programming\lesson3\Debug\List\project.map --config
 #        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        8.3\arm\config\linker\TexasInstruments\LM4F120H5QR.icf" --semihosting
 #        --entry __iar_program_start --vfe --text_out locale)
@@ -109,7 +109,7 @@ command line/config:
     -------------------------------------------
     Total:
 
-E:\embedded_programming\lesson3\Debug\Obj: [1]
+D:\embedded_programming\lesson3\Debug\Obj: [1]
     main.o                 24                 4
     -------------------------------------------
     Total:                 24                 4
@@ -175,7 +175,7 @@ exit                          0x115   0x4  Code  Gb  exit.o [2]
 main                           0xfd  0x18  Code  Gb  main.o [1]
 
 
-[1] = E:\embedded_programming\lesson3\Debug\Obj
+[1] = D:\embedded_programming\lesson3\Debug\Obj
 [2] = dl7M_tln.a
 [3] = m7M_tls.a
 [4] = rt7M_tl.a

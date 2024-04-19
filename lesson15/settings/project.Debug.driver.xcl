@@ -1,10 +1,16 @@
 "--endian=little" 
 
-"--cpu=Cortex-M3" 
+"--cpu=Cortex-M4" 
 
 "--fpu=None" 
 
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CONFIG\debugger\TexasInstruments\TM4C1237H6PGE.ddf" 
+
 "--semihosting" 
+
+"--device=TM4C1237H6PGE" 
 
 "--drv_interface_speed=500" 
 

@@ -1,14 +1,14 @@
-"E:\embedded_programming\lesson20\main.c"
+"D:\embedded_programming\lesson20\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-E:\embedded_programming\lesson20\Debug\Obj\main.pbi.dep
+D:\embedded_programming\lesson20\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-E:\embedded_programming\lesson20
+D:\embedded_programming\lesson20
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I

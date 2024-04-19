@@ -1,14 +1,14 @@
-"E:\embedded_programming\lesson16\bsp.c"
+"D:\embedded_programming\lesson16\bsp.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-E:\embedded_programming\lesson16\Debug\Obj\bsp.pbi.dep
+D:\embedded_programming\lesson16\Debug\Obj\bsp.pbi.dep
 -o
 bsp.pbi
 -I
-E:\embedded_programming\lesson16
+D:\embedded_programming\lesson16
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I

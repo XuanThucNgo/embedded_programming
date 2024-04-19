@@ -87,7 +87,8 @@
         <Stop>1</Stop>
     </MemConfig>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "E:\embedded_programming\lesson1\main.c" "D:\embedded_programming\lesson1\main.c"</A0>
+        <Count>1</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <Simulator>

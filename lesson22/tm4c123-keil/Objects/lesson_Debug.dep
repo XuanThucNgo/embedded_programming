@@ -1,34 +1,34 @@
 Dependencies for Project 'lesson', Target 'Debug': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
-F (.\main.c)(0x66142D54)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/main.o -MD)
+F (.\main.c)(0x6620CF52)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/main.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (bsp.h)(0x6601D015)
-F (.\bsp.c)(0x6601D015)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/bsp.o -MD)
+I (bsp.h)(0x6620CF52)
+F (.\bsp.c)(0x6620CF52)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/bsp.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (bsp.h)(0x6601D015)
-I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6601D015)
-I (..\CMSIS\Include\core_cm4.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_version.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_compiler.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_armclang.h)(0x6601D015)
-I (..\CMSIS\Include\mpu_armv7.h)(0x6601D015)
-I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6601D015)
-F (.\bsp.h)(0x6601D015)()
-F (..\ek-tm4c123gxl\arm\startup_TM4C123GH6PM.s)(0x6601D015)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto -c-gdwarf-3-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"Stack_Size SETA 1024" -Wa,armasm,--pd,"Heap_Size SETA 16"-o ./objects/startup_tm4c123gh6pm.o)
-F (..\ek-tm4c123gxl\README.txt)(0x6601D015)()
-F (..\ek-tm4c123gxl\system_TM4C123GH6PM.c)(0x6601D015)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/system_tm4c123gh6pm.o -MD)
+I (bsp.h)(0x6620CF52)
+I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6620CF52)
+I (..\CMSIS\Include\core_cm4.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_version.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_compiler.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_armclang.h)(0x6620CF52)
+I (..\CMSIS\Include\mpu_armv7.h)(0x6620CF52)
+I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6620CF52)
+F (.\bsp.h)(0x6620CF52)()
+F (..\ek-tm4c123gxl\arm\startup_TM4C123GH6PM.s)(0x6620CF52)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto -c-gdwarf-3-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"Stack_Size SETA 1024" -Wa,armasm,--pd,"Heap_Size SETA 16"-o ./objects/startup_tm4c123gh6pm.o)
+F (..\ek-tm4c123gxl\README.txt)(0x6620CF52)()
+F (..\ek-tm4c123gxl\system_TM4C123GH6PM.c)(0x6620CF52)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/LENOVO/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DTM4C123GH6PM-o ./objects/system_tm4c123gh6pm.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6601D015)
-I (..\CMSIS\Include\core_cm4.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_version.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_compiler.h)(0x6601D015)
-I (..\CMSIS\Include\cmsis_armclang.h)(0x6601D015)
-I (..\CMSIS\Include\mpu_armv7.h)(0x6601D015)
-I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6601D015)
-F (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6601D015)()
-F (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6601D015)()
-F (..\CMSIS\Include\cmsis_armclang.h)(0x6601D015)()
-F (..\CMSIS\Include\cmsis_compiler.h)(0x6601D015)()
-F (..\CMSIS\Include\cmsis_version.h)(0x6601D015)()
-F (..\CMSIS\Include\core_cm4.h)(0x6601D015)()
-F (..\CMSIS\Include\mpu_armv7.h)(0x6601D015)()
+I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6620CF52)
+I (..\CMSIS\Include\core_cm4.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_version.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_compiler.h)(0x6620CF52)
+I (..\CMSIS\Include\cmsis_armclang.h)(0x6620CF52)
+I (..\CMSIS\Include\mpu_armv7.h)(0x6620CF52)
+I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6620CF52)
+F (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x6620CF52)()
+F (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x6620CF52)()
+F (..\CMSIS\Include\cmsis_armclang.h)(0x6620CF52)()
+F (..\CMSIS\Include\cmsis_compiler.h)(0x6620CF52)()
+F (..\CMSIS\Include\cmsis_version.h)(0x6620CF52)()
+F (..\CMSIS\Include\core_cm4.h)(0x6620CF52)()
+F (..\CMSIS\Include\mpu_armv7.h)(0x6620CF52)()
